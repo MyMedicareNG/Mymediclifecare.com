@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Euclid';
+    src: url('../../public/fonts/Euclid\ Circular\ A\ Regular.ttf');
+}
+  
+html, * {
+    /* font-family: 'Euclid', Roboto !important; 
+    font-family: 'Euclid';
+    src: url('./public/fonts/Euclid\ Circular\ A\ Regular.ttf') !important; */
+    font-family: 'Euclid' !important;
+  }
+.login {
+    max-height: 400px !important;
+    /* padding: 10px; */
+}
+
+/* .nav-text {
+    margin-left: -20px !important;
+} */
+
+.logo {
+    margin-left: -10px !important;
+}
