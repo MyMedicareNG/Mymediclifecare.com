@@ -14,15 +14,43 @@ html, * {
     /* padding: 10px; */
 }
 
-<<<<<<< HEAD
-.nav-text {
-    font-size: 2rem !important;
-=======
+nav {
+    @media only screen and (min-width: 992px) {
+        height: 100px !important;
+    }
+}
+
 /* .nav-text {
     margin-left: -20px !important;
 } */
 
 .logo {
     margin-left: -10px !important;
->>>>>>> aa1e53bc304674efd4b6f75d45dd628ccf2b435f
+}
+
+.book-btn {
+    background-color: #599703 !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+footer {
+    margin-bottom: -16%;
+    @media only screen and (max-width: 992px) {
+        margin-bottom: -26%;
+    }
+}
+
+.pricing {
+    background: #022279;
+    .text {
+        margin-top: -50px;
+    }
+    @media only screen and (max-width: 800px) {
+        text-align: center;
+    }
+}
+
+.amount {
+    color: #599703 !important;
 }

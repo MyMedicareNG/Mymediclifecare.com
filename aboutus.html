@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyMedicare | About Us</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/images/favicon.png">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../assets/js/config.js"></script>
+    <script src="../vendors/simplebar/simplebar.min.js"></script>
+
+    <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
+    <link href="../assets/css/theme-rtl.min.css" rel="stylesheet" id="style-rtl">
+    <link href="../assets/css/theme.min.css" rel="stylesheet" id="style-default">
+    <link href="../assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
+    <link href="../assets/css/user.min.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      var isRTL = JSON.parse(localStorage.getItem('isRTL'));
+      if (isRTL) {
+        var linkDefault = document.getElementById('style-default');
+        var userLinkDefault = document.getElementById('user-style-default');
+        linkDefault.setAttribute('disabled', true);
+        userLinkDefault.setAttribute('disabled', true);
+        document.querySelector('html').setAttribute('dir', 'rtl');
+      } else {
+        var linkRTL = document.getElementById('style-rtl');
+        var userLinkRTL = document.getElementById('user-style-rtl');
+        linkRTL.setAttribute('disabled', true);
+        userLinkRTL.setAttribute('disabled', true);
+      }
+    </script>
+  </head>
+  <body>
+    <main class="main pb-0" id="top">
+      <nav class="nav-text navbar navbar-standard navbar-expand-lg fixed-top navbar-dark" style="background-color: #0B1727;">
+        <div class="container" >
+          <a class="link-light logo" href="#">
+            <img src="../../public/images/logo.png" class="img-fluid logo" alt="MyMedicareNG" width="130px" height="100px" style="margin-left:-26px;">
+          </a>          
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse scrollbar" id="navbarStandard" >
+            <ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="index.html" aria-haspopup="true" aria-expanded="false" id="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="aboutus.html" aria-haspopup="true" aria-expanded="false" id="about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="ourservices.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="services">Services</a>
+                <div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="documentations">
+                  <div class="bg-white dark__bg-1000 rounded-3 py-2">
+                    <a class="dropdown-item link-600 fw-medium" href="ourservices.html#virtual">Online/Virtual Consultation</a>
+                    <a class="dropdown-item link-600 fw-medium" href="ourservices.html#home_visit">Home Visitation</a>
+                    <a class="dropdown-item link-600 fw-medium" href="ourservices.html#therapy">Speak to a Therapist</a>
+                    <a class="dropdown-item link-600 fw-medium" href="ourservices.html#lab">Home Sample Collection</a>
+                    <a class="dropdown-item link-600 fw-medium" href="ourservices.html#care">Special Care Plan</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="patients">Clients and visitors</a>
+                <div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="documentations">
+                  <div class="bg-white dark__bg-1000 rounded-3 py-2">
+                    <a class="dropdown-item link-600 fw-medium" href="book-appointment.html">Book online Consultation</a>
+                    <a class="dropdown-item link-600 fw-medium" href="book-appointment.html">Request laboratory tests</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="contact">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./applicationlayer/login.php" aria-haspopup="true" aria-expanded="false">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./applicationlayer/1st.php">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="h-100 overflow-hidden light" id="banner">
+        <div class="container">
+          <div class="row flex-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
+            <div class="col-md-11 col-lg-8 col-xl-6 pb-7 pb-xl-9 text-xl-start">
+              <h1 class="text-dark fw-dark fs-lg-7 fs-6 " >
+                WHO WE ARE
+              </h1>
+              <p class="lead text-dark opacity-75">
+                MyMedicare is a health-technology
+                Company leveraging technology for fast,
+                efficient, easily accessible, and affordable medical services to Africans.
+              </p>
+            </div>
+            <div class="col-xl-5 offset-xl-1 align-self-start mt-4 mt-xl-0">
+              <a class=" rounded" href="../index.html">
+                <img class="img-fluid  rounded" src="./public/images/background/telemedicine-1.jpg" alt="" /></a></div>
+          </div>
+        </div>
+        <div class="container">
+            <div class="row flex-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
+                <div class="col-md-11 col-lg-8 col-xl-6 mt-4 mt-xl-0 order-2 order-md-0">
+                    <a class=" rounded" href="../index.html">
+                      <img class="img-fluid  rounded" src="./public/images/background/telemedicine-1.jpg" alt="" /></a>
+                  </div>
+                <div class="col-xl-5 offset-xl-1 align-self-start pb-7 pb-xl-9">
+                    <h1 class="text-dark fw-dark">
+                        Our Mission:
+                    </h1>
+                    <p class="lead text-dark opacity-75">
+                        To provide fast, affordable healthcare to our users using appropriate technology
+                        and prompt homecare.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row flex-center pt-8 pt-lg-10 pb-lg-9 pb-xl-0">
+              <div class="col-md-11 col-lg-8 col-xl-6 pb-7 pb-xl-9 text-xl-start">
+                <h1 class="text-dark fw-dark">
+                    Our Vision:
+                </h1>
+                <p class="lead text-dark opacity-75">
+                    To be a major key player in delivering quality healthcare and promoting the
+                    health of our users.
+                </p>
+              </div>
+              <div class="col-xl-5 offset-xl-1 align-self-start mt-4 mt-xl-0">
+                <a class=" rounded" href="../index.html">
+                  <img class="img-fluid  rounded" src="./public/images/background/telemedicine-1.jpg" alt="" /></a></div>
+            </div>
+        </div>
+      </section>
+      <!-- <section style="background-colorj: #344441;" id="ourteam">
+        <div class="container">
+          <div class="row flex-center pb-xl-0">
+            <h1 class="text-light fw-light">OUR TEAM</h1>
+        </div>
+      </section> -->
+    </main>
+    <footer class="light bg-dark pt-8 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="text-uppercase text-white opacity-85 mb-3">Our Mission</h5>
+            <p class="text-600">Our mission is to be the major key player in health care delivery in Africa using modern technology.</p>
+            <div class="icon-group mt-4">
+              <a class="icon-item bg-white text-facebook" href="index.html#!">
+                <span class="fab fa-facebook-f"></span></a>
+              <a class="icon-item bg-white text-twitter" href="#">
+                <span class="fab fa-twitter"></span>
+              </a>
+              <a class="icon-item bg-white text-linkedin" href="#"><span class="fab fa-linkedin-in"></span></a>
+              </div>
+          </div>
+          <div class="col ps-lg-6 ps-xl-8">
+            <div class="row mt-5 mt-lg-0">
+              <div class="col-6 col-md-6">
+                <h5 class="text-uppercase text-white opacity-85 mb-3">Company</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1"><a class="link-600" href="aboutus.html">About</a></li>
+                  <li class="mb-1"><a class="link-600" href="ourservices.html">Services</a></li>
+                  <li class="mb-1"><a class="link-600" href="#">Clients and Visitors</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-6">
+                <h5 class="text-uppercase text-white opacity-85 mb-3">Contact us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <h5 class="fs-0 mb-0">
+                      <a class="link-600" href="#"> Call/WhatsApp: +2347038033880</a></h5>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"> </script>
+    <script src="../vendors/typed.js/typed.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MyMedicare</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../public/images/favicon.png">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../assets/js/config.js"></script>
+    <script src="../vendors/simplebar/simplebar.min.js"></script>
+
+    <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
+    <link href="../assets/css/theme-rtl.min.css" rel="stylesheet" id="style-rtl">
+    <link href="../assets/css/theme.min.css" rel="stylesheet" id="style-default">
+    <link href="../assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
+    <link href="../assets/css/user.min.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      var isRTL = JSON.parse(localStorage.getItem('isRTL'));
+      if (isRTL) {
+        var linkDefault = document.getElementById('style-default');
+        var userLinkDefault = document.getElementById('user-style-default');
+        linkDefault.setAttribute('disabled', true);
+        userLinkDefault.setAttribute('disabled', true);
+        document.querySelector('html').setAttribute('dir', 'rtl');
+      } else {
+        var linkRTL = document.getElementById('style-rtl');
+        var userLinkRTL = document.getElementById('user-style-rtl');
+        linkRTL.setAttribute('disabled', true);
+        userLinkRTL.setAttribute('disabled', true);
+      }
+    </script>
+  </head>
+  <body>
+    <main class="main pb-0" id="top">
+        <nav class="nav-text navbar navbar-standard navbar-expand-lg fixed-top navbar-dark" style="background-color: #0B1727;">
+            <div class="container" >
+              <a class="link-light logo" href="#">
+                <img src="../../public/images/logo.png" class="img-fluid logo" alt="MyMedicareNG" width="130px" height="100px" style="margin-left:-26px;">
+              </a>          
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse scrollbar" id="navbarStandard" >
+                <ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="index.html" aria-haspopup="true" aria-expanded="false" id="home">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="aboutus.html" aria-haspopup="true" aria-expanded="false" id="about">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="ourservices.html" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="services">Services</a>
+                    <div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="documentations">
+                      <div class="bg-white dark__bg-1000 rounded-3 py-2">
+                        <a class="dropdown-item link-600 fw-medium" href="ourservices.html#virtual">Online/Virtual Consultation</a>
+                        <a class="dropdown-item link-600 fw-medium" href="ourservices.html#home_visit">Home Visitation</a>
+                        <a class="dropdown-item link-600 fw-medium" href="ourservices.html#therapy">Speak to a Therapist</a>
+                        <a class="dropdown-item link-600 fw-medium" href="ourservices.html#lab">Home Sample Collection</a>
+                        <a class="dropdown-item link-600 fw-medium" href="ourservices.html#care">Special Care Plan</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="patients">Clients and visitors</a>
+                    <div class="dropdown-menu dropdown-caret dropdown-menu-card border-0 mt-0" aria-labelledby="documentations">
+                      <div class="bg-white dark__bg-1000 rounded-3 py-2">
+                        <a class="dropdown-item link-600 fw-medium" href="book-appointment.html">Book online Consultation</a>
+                        <a class="dropdown-item link-600 fw-medium" href="book-appointment.html">Request laboratory tests</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="contact">Contact Us</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./applicationlayer/login.php" aria-haspopup="true" aria-expanded="false">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./applicationlayer/1st.php">Sign up</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      <section class="h-100 overflow-hidden" id="banner">
+        <div class="container">
+          <div class="row flex-center pt-7 pt-lg-0">
+            <div class="col-md-11 col-lg-8 col-xl-6 text-xl-start">
+              <h1 class="fs-sm-4 fs-md-5 fw-bold text-center pt-5" style="color: #012162;">OUR SERVICES</h1>
+            </div>
+          </div>
+          <div class="row flex-center pt-4 pb-5" id="virtual">
+            <h3 style="color: #012162; font-weight: bold;">Virtual Consultation</h3>
+            <h5 class="opacity-75 pt-2"> Connect with Expert Healthcare Professionals from the Comfort of Your Home </h5>
+            <div class="col-md col-lg-5 col-xl-5 pt-2">
+              <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/virtual_consultation.jpeg" alt="" />
+            </div>
+            <div class="col-md col-lg-7 mt-3 mt-md-0">
+              <p>
+                Our virtual consultation service brings expert healthcare professionals directly to you, wherever you are. Skip the hassle of commuting, waiting rooms, and long queues. 
+                Through secure and convenient video calls, you can have real-time consultations with our trusted doctors, specialists, and therapists. 
+                Get personalized medical advice, treatment plans, and recommendations tailored to your specific needs. Take control of your health without sacrificing your precious time and productivity.
+              </p>
+              <a href="book-appointment.html">
+                <button class="btn book-btn">Book now</button>
+              </a>
+            </div>
+          </div>
+          <div class="row flex-center pt-5 pb-5" id="home_visit">
+            <h3 style="color: #012162; font-weight: bold;">Home Visitation</h3>
+            <h5 class="opacity-75 pt-2"> Personalized Healthcare Delivered to Your Doorstep</h5>
+            <div class="col-md col-lg-5 col-xl-5 pt-2">
+              <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/home_visitation.jpeg" alt="home_visitation" />
+            </div>
+            <div class="col-md col-lg-7 mt-3 mt-md-0">
+              <p>
+                Our home visitation service brings quality healthcare to your doorstep. Whether you're a busy professional, an elderly individual with chronic conditions, or a celebrity influencer with a demanding schedule, our experienced healthcare providers will come to you. 
+                Receive comprehensive medical assessments, personalized care, and treatments in the comfort and privacy of your own home. Our dedicated team ensures that you receive the highest level of healthcare without the inconvenience of travel or long waits. 
+                Experience the convenience of accessible and compassionate healthcare tailored to your unique needs.
+              </p>
+              <a href="book-appointment.html">
+                <button class="btn book-btn">Book now</button>
+              </a>            
+            </div>
+          </div>
+          <div class="row flex-center pt-5 pb-5" id="therapy">
+            <h3 style="color: #012162; font-weight: bold;">Speak to a Therapist</h3>
+            <h5 class="opacity-75 pt-2"> Your Journey to Emotional Well-being Starts Here </h5>
+            <div class="col-md col-lg-5 col-xl-5 pt-2">
+              <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/doctor.jpeg" alt="" />
+            </div>
+            <div class="col-md col-lg-7 mt-3 mt-md-0">
+              <p>
+                At Mymedicare, we understand the importance of mental and emotional well-being in achieving productivity and overall happiness. With our "Speak to a Therapist" service, you can connect with qualified and compassionate therapists from anywhere. 
+                Whether you're dealing with stress, anxiety, depression, or simply need someone to talk to, our virtual therapy sessions provide a safe and confidential space for you to share your thoughts and feelings. 
+                Gain valuable insights, coping strategies, and personalized guidance to enhance your mental resilience, emotional balance, and productivity.
+              </p>
+              <a href="book-appointment.html">
+                <button class="btn book-btn">Book now</button>
+              </a>            
+            </div>
+          </div>
+          <div class="row flex-center pt-5 pb-5" id="lab">
+            <h3 style="color: #012162; font-weight: bold;">Home Sample Collection</h3>
+            <h5 class="opacity-75 pt-2"> Hassle-Free and Convenient Health Testing at Your Doorstep</h5>
+            <div class="col-md col-lg-5 col-xl-5 pt-2">
+              <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/doctor.jpeg" alt="" />
+            </div>
+            <div class="col-md col-lg-7 mt-3 mt-md-0">
+              <p>
+                Stay proactive about your health with our home sample collection service. We understand the importance of regular health screenings, especially for busy individuals and those managing chronic conditions. 
+                Our skilled healthcare professionals will visit your home at your preferred time to collect samples for a wide range of diagnostic tests. 
+                From blood tests to urine analysis, our accurate and reliable assessments help identify potential health issues and guide your personalized treatment plan. Experience the ease and convenience of health testing without the need to travel or wait in long queues.
+              </p>
+              <a href="book-appointment.html">
+                <button class="btn book-btn">Book now</button>
+              </a>            
+            </div>
+          </div>
+          <div class="row flex-center pt-5" id="care">
+            <h3 style="color: #012162; font-weight: bold;">Special Care Plan</h3>
+            <h5 class="opacity-75 pt-2 pb-4"> You can choose from our health care plans </h5>
+            <div class="col-md col-lg-12 ">
+              <div class="row justify-content-center">
+                <div class="col-lg-4 mb-lg-2">
+                  <div class= "h-100">
+                    <div class=" pt-3">
+                      <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/full-body-check-basic.jpeg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-6 mt-lg-0 mb-lg-2">
+                  <div class="h-100">
+                    <div class="pt-3">
+                      <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/full-body-check-standard.jpeg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-6 mt-lg-0 mb-lg-0">
+                  <div class="h-100">
+                    <div class="pt-3">
+                      <img class="img-fluid px-6 px-md-0 rounded" src="./public/images/checks/full-body-check-standard-plus.jpeg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="container">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row justify-content-center">
+                <div class="col-12 text-center mb-4">
+                  <div class="fs-4 fw-bold pt-3">PRICING</div>
+                </div>
+                <div class="col-12 col-lg-9 col-xl-10 col-xxl-8">
+                  <div class="row">
+                    <div class="col-md">
+                      <div class="border rounded-3 overflow-hidden mb-3 mb-md-0">
+                        <div class="d-flex flex-between-center p-4">
+                          <div>
+                            <h3 class="fw-light fs-1 mb-0 text-primary">Online Consultation 
+                              (Pay as you go)</h3>
+                          </div>
+                        </div>
+                        <div class="p-4 bg-light">
+                          <ul class="list-unstyled">
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"> </span> NGN2,500 per session</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="border rounded-3 overflow-hidden mb-3 mb-md-0">
+                        <div class="d-flex flex-between-center p-4">
+                          <div>
+                            <h3 class="fw-light fs-1 mb-0 text-primary">One-time Users</h3>
+                          </div>
+                        </div>
+                        <div class="p-4 bg-light">
+                          <ul class="list-unstyled">
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> NGN 15,000 for First Consultation</li>
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> NGN10,000 for subsequent sessions</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="border rounded-3 overflow-hidden mb-3 mb-md-0">
+                        <div class="d-flex flex-between-center p-4">
+                          <div>
+                            <h3 class="fw-light fs-1 mb-0 text-primary">Subscribers</h3>
+                          </div>
+                        </div>
+                        <div class="p-4 bg-light">
+                          <ul class="list-unstyled">
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> NGN 30,000 for three sessions.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pt-4">
+                    <div class="col-md">
+                      <div class="border rounded-3 overflow-hidden">
+                        <div class="d-flex flex-between-center p-4">
+                          <div>
+                            <h3 class="fw-light text-primary fs-1 mb-0">3 Months Subscription</h3>
+                            <h2 class="fw-light text-primary mt-0"><span class="fs-1">NGN25,000</span></h2>
+                          </div>
+                        </div>
+                        <div class="p-4 bg-light">
+                          <ul class="list-unstyled" style="padding-top: 24px;">
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"> </span> 3 Online Consultations per month (25mins/session)</li>
+                            <li class="border-bottom py-2" style="padding-bottom: 10px;"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> One free home sample collection</li>
+                            <li class="border-bottom py-2 text-300"> <span class="fas fa-check" data-fa-transform="shrink-2"></span> One time doctor home visitation </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md pb-4">
+                      <div class="border rounded-3 overflow-hidden">
+                        <div class="d-flex flex-between-center p-4">
+                          <div>
+                            <h3 class="fw-light text-primary fs-1 mb-0">6 Months Subscription</h3>
+                            <h2 class="fw-light text-primary mt-0"><span class="fs-1">NGN50,000</span></h2>
+                          </div>
+                        </div>
+                        <div class="p-4 bg-light">
+                          <ul class="list-unstyled">
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"> </span> 3 Online Consultations per month (25mins/session)</span></li>
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> One free home sample collection every 3 months on request</li>
+                            <li class="border-bottom py-2"> <span class="fas fa-check text-primary" data-fa-transform="shrink-2"></span> One time doctor home visitation </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="light bg-dark pt-8 pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="text-uppercase text-white opacity-85 mb-3">Our Mission</h5>
+            <p class="text-600">Our mission is to be the major key player in health care delivery in Africa using modern technology.</p>
+            <div class="icon-group mt-4">
+              <a class="icon-item bg-white text-facebook" href="index.html#!">
+                <span class="fab fa-facebook-f"></span></a>
+              <a class="icon-item bg-white text-twitter" href="#">
+                <span class="fab fa-twitter"></span>
+              </a>
+              <a class="icon-item bg-white text-linkedin" href="#"><span class="fab fa-linkedin-in"></span></a>
+              </div>
+          </div>
+          <div class="col ps-lg-6 ps-xl-8">
+            <div class="row mt-5 mt-lg-0">
+              <div class="col-6 col-md-6">
+                <h5 class="text-uppercase text-white opacity-85 mb-3">Company</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-1"><a class="link-600" href="aboutus.html">About</a></li>
+                  <li class="mb-1"><a class="link-600" href="ourservices.html">Services</a></li>
+                  <li class="mb-1"><a class="link-600" href="#">Clients and Visitors</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-6">
+                <h5 class="text-uppercase text-white opacity-85 mb-3">Contact us</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <h5 class="fs-0 mb-0">
+                      <a class="link-600" href="#"> Call/WhatsApp: +2347038033880</a></h5>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/swiper/swiper-bundle.min.js"> </script>
+    <script src="../vendors/typed.js/typed.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+</html>
