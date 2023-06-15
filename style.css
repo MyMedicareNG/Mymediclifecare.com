@@ -20,10 +20,10 @@ nav {
     }
 }
 
-/* .nav-text {
-    margin-left: -20px !important;
-} */
-
+.images {
+    height: 400px !important;
+    width: 400px;
+}
 .logo {
     margin-left: -10px !important;
 }
